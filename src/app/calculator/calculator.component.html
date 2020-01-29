@@ -1,23 +1,47 @@
-<div class="container p-3 my-3 border">
-    <div>
+<div class="container p-3 my-3 ">
+    <div style="width: 304px;height: 379px; border: 2px solid ;">
+        <div class="c_sp">
+            <span *ngIf="_his">{{history}}</span><br>
+            <span  disabled>{{show}}</span>
+           
+        </div>
         <div>
-            <input  type="text" placeholder="" >
+            <div >
+                <button type="button" class="btn btn-danger" style="width: 50%;" (click)="del()">AC</button>
+                <button type="button" class="btn btn-danger" style="width: 50%;" (click)="Percent()">DEL</button>
+            </div>
         </div>
         <div>
             <div>
-            <button type="button" class="btn btn-outline-dark">+</button>
-            <button type="button" class="btn btn-outline-dark">-</button>
-            <button type="button" class="btn btn-outline-dark">*</button>
-            <button type="button" class="btn btn-outline-dark">/</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(7)">7</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(8)">8</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(9)">9</button>
+                <button type="button" class="btn btn-danger" (click)="number('/')">÷</button>
             </div>
+            <div>
+                <button type="button" class="btn btn-outline-dark" (click)="number(4)">4</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(5)">5</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(6)">6</button>
+                <button type="button" class="btn btn-danger" (click)="number('*')">x</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-dark" (click)="number(1)">1</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(2)">2</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number(3)">3</button>
+                <button type="button" class="btn btn-danger" (click)="number('-')">-</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-dark" (click)="number(0)">0</button>
+                <button type="button" class="btn btn-outline-dark" (click)="number('.')">.</button>
+                <button type="submit" class="btn btn-primary" (click)="total()">=</button>
+                <button type="button" class="btn btn-danger" (click)="number('+')">+</button>
+            </div>
+
+
+
+
+
+
         </div>
-
-
-
-
-
-
-
-
     </div>
 </div>

@@ -1,0 +1,22 @@
+
+button {
+    font-size: 30px;
+    width: 75px;
+  }
+
+
+  input[type=text]:focus {
+    border: 25px solid #555;
+  }
+
+.c_sp{
+    height: 20px;
+    width: 100%;
+    background-color: lightgray;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    text-align: end;
+    span{
+      font-size :18px  ;
+    }
+}
